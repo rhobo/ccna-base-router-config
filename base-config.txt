@@ -1,0 +1,19 @@
+hostname
+line vty 0 4
+ password enterpasshere
+ login
+line con 0 
+ password enterpasshere
+ login
+ logg syn
+ no exec-t
+ exit
+enable secret cisco
+no ip domain-look
+banner motd %
+
+********************************
+DO NOT LOG IN TO THIS DEVICE
+********************************
+
+%
